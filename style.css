@@ -469,7 +469,12 @@ label .grupo-opciones {
 .formulario textarea::placeholder {
   color: var(--gris-placeholder);
 }
-
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: none;
+  border: 2px solid #d4e2cf;
+}
 .formulario textarea {
   resize: vertical;
   min-height: 80px;
